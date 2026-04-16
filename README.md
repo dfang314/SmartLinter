@@ -1,5 +1,10 @@
 This project aims to provide an all-in-one tool to evaluate and "lint" code in a more abstract and subjective way than existing tools such as Python Black. It is currently made for Python object oriented projects but is not necessarily limited to them. Although it is given that coding styles and standards vary greatly, this project's goal is to check for universally good practices (or violations thereof). The main axes that this tool evaluates on are as follows:
 
+### Requirements
+---
+    - GitHub CLI installed and authenticated  (`gh auth login`)
+    - GitHub Copilot extension installed      (`gh extension install github/gh-copilot`)
+
 ### Naming
 ---
 Variable, function, and object names should be concise and descriptive. Variable names should be descriptive of the concept that the variable represents moreso than how the variable is used: force should be calculated as `mass * acceleration`, and not `factor1 * factor2`. Function names should, when possible, indicate its role in the program, such as its effect on object state and relation to key variables and objects (note the difference between `calculate()`, `calculateForce()`, and `calculateAndStoreForce()`). Object names should accurately identify a single instance of that object, rather than a collection or the objects' relation to other objects: `Book` vs. `BookList` vs. `LibraryItem`.
